@@ -71,12 +71,12 @@ export default function Navbar() {
       >
         <div className="w-full flex items-center justify-between">
           {/* Logos */}
-          <div className="flex items-center gap-1 xl:gap-6">
-            <img src="/assets/logos/principales/CIKI.png" alt="CIKI" className="h-10 xl:h-16 object-contain" />
+          <div className="flex items-center gap-1 xl:gap-3">
+            <img src="/assets/logos/principales/CIKI.png" alt="CIKI" className="h-12 xl:h-20 object-contain" />
             <span className="text-navy/30 text-2xl xl:text-4xl font-thin">|</span>
-            <img src="/assets/logos/principales/ICKM.png" alt="ICKM" className="h-10 xl:h-16 object-contain" />
+            <img src="/assets/logos/principales/ICKM.png" alt="ICKM" className="h-12 xl:h-20 object-contain" />
             <span className="text-navy/30 text-2xl xl:text-4xl font-thin">|</span>
-            <img src="/assets/logos/principales/GFIC.png" alt="GFIC" className="h-10 xl:h-16 object-contain" />
+            <img src="/assets/logos/principales/GFIC.png" alt="GFIC" className="h-12 xl:h-20 object-contain" />
           </div>
 
           {/* Desktop: globe + links */}
