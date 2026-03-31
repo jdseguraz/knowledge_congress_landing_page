@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url('/fonts/bahnschrift.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-navy text-white font-bahnschrift;
+  }
+}
+
+@keyframes arrowRight {
+  0%, 100% { transform: translateX(0) translateY(-50%); }
+  50%       { transform: translateX(6px) translateY(-50%); }
+}
+@keyframes arrowLeft {
+  0%, 100% { transform: translateX(0) translateY(-50%); }
+  50%       { transform: translateX(-6px) translateY(-50%); }
+}
+.arrow-right { animation: arrowRight 1.2s ease-in-out infinite; }
+.arrow-left  { animation: arrowLeft  1.2s ease-in-out infinite; }
+
+@layer components {
+  .section-title {
+    @apply font-bahnschrift font-extrabold uppercase text-orange text-5xl leading-none;
+  }
+
+  .btn-orange {
+    @apply bg-orange text-white font-bahnschrift font-bold uppercase px-6 py-3 rounded-full hover:bg-orange-hover transition-colors;
+  }
+
+  .avatar-ring {
+    @apply rounded-full border-4 border-orange object-cover;
+  }
+
+  .track-badge {
+    @apply bg-orange text-white font-bahnschrift font-bold uppercase px-4 py-2 rounded-full flex items-center gap-2;
+  }
+}
