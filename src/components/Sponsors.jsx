@@ -8,7 +8,7 @@ const primarySponsors = [
 ]
 
 const supportingSponsors = [
-  { name: 'Universidad de Chile', src: '/assets/logos/sponsors/uchile_transparent.png', className: 'h-28 xl:h-32 pr-6' },
+  { name: 'Universidad de Chile', src: '/assets/logos/sponsors/uchile_transparent_v2.png', className: 'h-28 xl:h-32 pr-6' },
   { name: 'OUI / IOHE', src: '/assets/logos/sponsors/OUI_logo_transparent.png', className: 'h-28 xl:h-32' },
   { name: 'Dialógica', src: '/assets/logos/sponsors/dialogica_logo.png', className: 'h-10 xl:h-12' },
   { name: 'ISCTE', src: '/assets/logos/sponsors/ISCTE.png', className: 'h-24 xl:h-28 pt-8' },
