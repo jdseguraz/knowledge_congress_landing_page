@@ -33,7 +33,7 @@ export default function Program() {
         </motion.div>
 
         {/* Right — under construction */}
-        <motion.div initial="hidden" whileInView="visible" viewport={viewport} variants={fadeRight} className="md:col-span-2 self-end">
+        <motion.div initial="hidden" whileInView="visible" viewport={viewport} variants={fadeRight} className="md:col-span-2 self-center flex items-center justify-center">
           <UnderConstruction />
         </motion.div>
       </div>

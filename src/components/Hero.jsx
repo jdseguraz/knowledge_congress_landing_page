@@ -14,7 +14,7 @@ export default function Hero() {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-top"
       >
         <source src="/assets/videos/video-inicial.mov" type="video/mp4" />
       </video>
@@ -26,7 +26,7 @@ export default function Hero() {
         <div>
           <span
             className="font-bahnschrift font-extrabold uppercase leading-none px-2 py-0 inline-block"
-            style={{ color: '#163458', background: BG, fontSize: 'clamp(2.5rem, 4.8vw, 4.8rem)' }}
+            style={{ color: '#163458', background: BG, fontSize: 'clamp(3.2rem, 4.8vw, 4.8rem)' }}
           >
             THE NEXT HORIZON:
           </span>

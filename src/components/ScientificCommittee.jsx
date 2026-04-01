@@ -64,8 +64,8 @@ function MemberCard({ name, role, org, country, photo }) {
       </div>
       <div className="space-y-1">
         <p className="font-bahnschrift font-bold text-white text-base xl:text-lg 2xl:text-xl leading-tight">{name}</p>
-        <p className="text-orange text-sm xl:text-base 2xl:text-lg font-semibold leading-snug">{role}</p>
-        <p className="text-white/70 text-sm 2xl:text-base mt-1">{org}</p>
+        <p className="text-white/60 text-sm xl:text-base 2xl:text-lg font-semibold leading-snug">{role}</p>
+        <p className="text-orange text-sm 2xl:text-base mt-1">{org}</p>
         <p className="text-white/50 text-xs xl:text-sm 2xl:text-base">{country}</p>
       </div>
     </div>
@@ -97,9 +97,8 @@ export default function ScientificCommittee() {
       <div className="xl:sticky xl:top-0 xl:h-screen bg-[#163457] flex flex-col px-6 xl:px-12 pt-14 pb-6">
 
         {/* Title */}
-        <h2 className="font-bahnschrift font-bold text-orange uppercase tracking-widest text-4xl xl:text-6xl mb-6">
-          SCIENTIFIC COMMITTEE
-        </h2>
+        <p className="font-bahnschrift font-bold text-orange uppercase text-xl mb-1">SCIENTIFIC</p>
+        <h2 className="section-title text-4xl xl:text-6xl mb-6">COMMITTEE</h2>
 
         {/* Desktop — páginas animadas */}
         <div className="hidden xl:block relative flex-1">

@@ -17,7 +17,7 @@ const tracks = [
   },
   {
     num: 2,
-    title: 'Artificial Intelligence, Knowledge Engineering, and Emerging Technologies',
+    title: 'AI, Knowledge Engineering, and Emerging Technologies',
     topics: [
       'Advances and future directions in artificial intelligence and knowledge engineering',
       'Knowledge-based intelligent systems',
@@ -68,12 +68,8 @@ const submissionTypes = [
     desc: 'Seeks to share practical experiences, lessons learned, and solutions applied in real industrial, business, or public contexts. Cases of innovations applied in companies and the public sector are especially welcome. 200-300 words that will cover the main idea of the case.',
   },
   {
-    type: 'WORKING PAPERS (IN-PERSON/ONLINE)',
-    desc: 'Must contain the essential elements that allow understanding of the academic contribution of the article to the conference, such as: objectives, methodology, theoretical foundations, and partial results. Documents of 2000-3000 words are accepted.',
-  },
-  {
     type: 'FULL PAPER (IN-PERSON/ONLINE)',
-    desc: 'Must present original and significant contributions to scientific knowledge, validated through rigorous methods. Documents must contain between 3000-6000 words. Best papers will be considered for publication in the journals associated with the conference.',
+    desc: 'Must present original and significant contributions to scientific knowledge, validated through rigorous methods. Documents must contain between 4000-6000 words. Best papers will be considered for publication in the journals associated with the conference.',
   },
   {
     type: 'POSTER (IN-PERSON ONLY)',
@@ -102,8 +98,8 @@ export default function CallForPapers() {
             </h2>
 
             <div className="text-white/80 text-base md:text-lg leading-snug space-y-1 md:pt-1">
-              <p>Call for papers/working papers/industrial cases/posters opens: <strong className="text-white">March 20, 2026</strong></p>
-              <p className="text-orange font-bahnschrift font-bold">SUBMISSION DEADLINE: JUNE 8, 2026</p>
+              <p>Call for abstracts/Industrial cases/Posters opens: <strong className="text-white">April 1st, 2026</strong></p>
+              <p className="text-orange font-bahnschrift font-bold">SUBMISSION DEADLINE: MAY 15TH, 2026</p>
             </div>
           </motion.div>
 
@@ -155,15 +151,24 @@ export default function CallForPapers() {
             )
           })}
 
-          <div className="mt-5 flex justify-center md:justify-end">
+          <div className="mt-5 flex flex-col items-center md:items-end gap-3">
             <a
               href={SUBMISSION_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-5 md:pl-8 md:pr-16 md:py-7 rounded-full md:rounded-r-none md:rounded-l-full text-white font-bahnschrift font-normal transition-colors hover:opacity-90"
+              className="inline-flex items-center px-8 py-5 md:pl-8 md:pr-16 md:py-7 rounded-full md:rounded-r-none md:rounded-l-full text-white font-bahnschrift font-normal transition-colors hover:bg-orange"
               style={{ backgroundColor: '#8abceb' }}
             >
-              <span className="text-xl md:text-2xl">Paper Guidelines &amp; Submission</span>
+              <span className="text-xl md:text-2xl">Paper Guidelines</span>
+            </a>
+            <a
+              href="https://easychair.org/account/signin?l=2180654027413405632.1774997082.ecc9ef9f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-5 md:pl-8 md:pr-16 md:py-7 rounded-full md:rounded-r-none md:rounded-l-full text-white font-bahnschrift font-normal transition-colors hover:bg-orange"
+              style={{ backgroundColor: '#8abceb' }}
+            >
+              <span className="text-xl md:text-2xl">Submission</span>
             </a>
           </div>
         </motion.div>

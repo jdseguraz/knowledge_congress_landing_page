@@ -14,7 +14,7 @@ export default function Intro() {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-top"
       >
         <source src="/assets/videos/video-inicial.mov" type="video/mp4" />
       </video>
@@ -23,7 +23,7 @@ export default function Intro() {
       <div className="absolute inset-0 bg-navy/70" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center pt-[20vh] px-10">
+      <div className="relative z-10 h-full flex flex-col justify-center pt-[20vh] px-10 pb-16 md:pb-0">
         <motion.div
           initial="hidden"
           whileInView="visible"

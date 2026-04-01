@@ -55,9 +55,8 @@ export default function Organizers() {
       <div className="xl:sticky xl:top-0 xl:h-screen bg-[#163457] flex flex-col px-6 xl:px-12 pt-14 pb-6">
 
         {/* Title */}
-        <h2 className="font-bahnschrift font-bold text-orange uppercase tracking-widest text-4xl xl:text-6xl mb-8">
-          LOCAL ORGANIZING<br />COMMITTEE
-        </h2>
+        <p className="font-bahnschrift font-bold text-orange uppercase text-xl mb-1">LOCAL ORGANIZING</p>
+        <h2 className="section-title text-4xl xl:text-6xl mb-8">COMMITTEE</h2>
 
         {/* Contenido — dos columnas */}
         <div className="flex-1 grid grid-cols-1 xl:grid-cols-2 gap-10 xl:gap-16">

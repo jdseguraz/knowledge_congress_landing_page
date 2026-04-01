@@ -17,9 +17,9 @@ const fees = [
 ]
 
 const importantDates = [
-  { label: 'Call for papers/working papers/industrial cases/posters opens', date: 'March 20, 2026' },
-  { label: 'Submission deadline', date: 'June 8, 2026' },
-  { label: 'Early registration deadline (on-site/online)', date: 'August 2, 2026' },
+  { label: 'Call for abstracts/Industrial cases/Posters opens', date: 'April 1st, 2026' },
+  { label: 'Submission deadline', date: 'July 30, 2026' },
+  { label: 'Early registration deadline (on-site/online)', date: 'July 24, 2026' },
   { label: 'Final registration deadline', date: 'October 12, 2026' },
 ]
 
@@ -66,7 +66,7 @@ export default function Registration() {
             <FlushButton href="https://drive.google.com/drive/folders/153ctrly5yShpel72xCIvBx2SeTTIGhEm?usp=sharing">
               USEFUL INFORMATION
             </FlushButton>
-            <FlushButton href="https://drive.google.com/drive/folders/1LqyLdQFYIcuXxn_VSWwuUWFCqdWmz-iu?usp=sharing" subtitle="Deadline June 8, 2026">
+            <FlushButton href="https://easychair.org/account/signin?l=2180654027413405632.1774997082.ecc9ef9f" subtitle="Deadline July 30, 2026">
               SUBMISSION LINK
             </FlushButton>
           </div>

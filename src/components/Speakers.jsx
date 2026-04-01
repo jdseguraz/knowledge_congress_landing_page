@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { fadeRight, staggerContainer, staggerItem, viewport } from '../utils/animations'
+import { staggerContainer, staggerItem, viewport } from '../utils/animations'
 
 const speakers = [
   {
@@ -24,27 +24,43 @@ const speakers = [
 ]
 
 function SpeakerCard({ name, country, photo, bio }) {
+  const photoEl = photo ? (
+    <img src={photo} alt={name} className="w-full h-full object-cover" />
+  ) : (
+    <svg viewBox="0 0 100 100" className="w-full h-full text-white/30 fill-current">
+      <circle cx="50" cy="38" r="20" />
+      <ellipse cx="50" cy="85" rx="35" ry="25" />
+    </svg>
+  )
+
   return (
-    <div className="flex flex-col items-center text-center gap-5 w-full max-w-lg mx-auto">
-      {/* Photo */}
-      <div className="w-44 h-44 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 rounded-full border-4 border-orange overflow-hidden bg-navy-light flex-shrink-0">
-        {photo ? (
-          <img src={photo} alt={name} className="w-full h-full object-cover" />
-        ) : (
-          <svg viewBox="0 0 100 100" className="w-full h-full text-white/30 fill-current">
-            <circle cx="50" cy="38" r="20" />
-            <ellipse cx="50" cy="85" rx="35" ry="25" />
-          </svg>
-        )}
+    <>
+      {/* Mobile: imagen arriba, descripción abajo */}
+      <div className="md:hidden flex flex-col items-center text-center gap-5 w-full px-4">
+        <div className="w-52 h-52 rounded-full border-4 border-orange overflow-hidden bg-navy-light flex-shrink-0">
+          {photoEl}
+        </div>
+        <div className="flex flex-col gap-2">
+          <p className="font-bahnschrift font-bold text-white text-2xl leading-tight">{name}</p>
+          <p className="text-orange text-base font-semibold">{country}</p>
+          <p className="text-white/70 text-sm leading-relaxed">{bio}</p>
+        </div>
       </div>
 
-      {/* Text */}
-      <div className="flex flex-col gap-2">
-        <p className="font-bahnschrift font-bold text-white text-2xl xl:text-3xl 2xl:text-4xl leading-tight">{name}</p>
-        <p className="text-orange text-base xl:text-lg font-semibold">{country}</p>
-        <p className="text-white/70 text-sm xl:text-base 2xl:text-lg leading-relaxed">{bio}</p>
+      {/* Desktop: círculo grande arriba-izquierda, texto abajo-derecha */}
+      <div className="hidden md:flex items-end gap-10 w-full h-[58vh] pb-6 justify-center items-center">
+        {/* Círculo grande — anclado arriba */}
+        <div className="self-start flex-shrink-0 w-80 h-80 xl:w-96 xl:h-96 2xl:w-[26rem] 2xl:h-[26rem] rounded-full border-4 border-orange overflow-hidden bg-navy-light">
+          {photoEl}
+        </div>
+        {/* Texto — anclado abajo, diagonal natural */}
+        <div className="flex flex-col gap-3 items-center text-center">
+          <p className="font-bahnschrift font-bold text-white text-2xl xl:text-3xl 2xl:text-4xl leading-tight">{name}</p>
+          <p className="text-orange text-base xl:text-lg font-semibold">{country}</p>
+          <p className="text-white/70 text-sm xl:text-base leading-relaxed">{bio}</p>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

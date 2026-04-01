@@ -3,9 +3,9 @@ import FlushButton from './FlushButton'
 import { fadeRight, fadeUp, staggerContainer, staggerItem, viewport } from '../utils/animations'
 
 const importantDates = [
-  { label: 'Call for papers/working papers/industrial cases/posters opens', date: 'March 20, 2026' },
-  { label: 'Submission deadline', date: 'June 8, 2026' },
-  { label: 'Early registration deadline (on-site/online)', date: 'August 2, 2026' },
+  { label: 'Call for abstracts/Industrial cases/Posters opens', date: 'April 1st, 2026' },
+  { label: 'Submission deadline', date: 'July 30, 2026' },
+  { label: 'Early registration deadline (on-site/online)', date: 'July 24, 2026' },
   { label: 'Final registration deadline', date: 'October 12, 2026' },
 ]
 
@@ -18,7 +18,7 @@ export default function Contact() {
           <motion.h2 variants={staggerItem} className="section-title text-4xl md:text-6xl self-start">CONTACT</motion.h2>
           <motion.div variants={fadeUp} className="w-36 h-36 md:w-48 md:h-48 rounded-full border-4 border-orange overflow-hidden mt-4">
             <img
-              src="/assets/people_photos/evelyn_bunster_conference_manager.png"
+              src="/assets/people_photos/organizers/evelyn_bunster_conference_manager.png"
               alt="Evelyn Bunster"
               className="w-full h-full object-cover"
             />
@@ -29,13 +29,13 @@ export default function Contact() {
           <motion.div variants={staggerContainer} className="space-y-3 w-full mt-2">
             <motion.div variants={staggerItem} className="flex items-center gap-3">
               <span className="text-white/60 text-lg">✉</span>
-              <a href="mailto:evelyn.bunster@usach.cl" className="text-white/80 text-lg leading-snug hover:text-white transition-colors">
-                evelyn.bunster@usach.cl
+              <a href="mailto:contact@knowledgeconference.cl" className="text-white/80 text-lg leading-snug hover:text-white transition-colors">
+                contact@knowledgeconference.cl
               </a>
             </motion.div>
             <motion.div variants={staggerItem} className="flex items-center gap-3">
               <span className="text-white/60 text-lg">📞</span>
-              <span className="text-white/80 text-lg leading-snug">+56 XXXXXXXX</span>
+              <span className="text-white/80 text-lg leading-snug">+56 9 9085 4734</span>
             </motion.div>
           </motion.div>
         </motion.div>
@@ -58,7 +58,7 @@ export default function Contact() {
           <FlushButton href="https://drive.google.com/drive/folders/153ctrly5yShpel72xCIvBx2SeTTIGhEm?usp=sharing">
             USEFUL INFORMATION
           </FlushButton>
-          <FlushButton href="https://drive.google.com/drive/folders/1LqyLdQFYIcuXxn_VSWwuUWFCqdWmz-iu?usp=sharing" subtitle="Deadline June 8, 2026">
+          <FlushButton href="https://easychair.org/account/signin?l=2180654027413405632.1774997082.ecc9ef9f" subtitle="Deadline July 30, 2026">
             SUBMISSION LINK
           </FlushButton>
         </motion.div>
