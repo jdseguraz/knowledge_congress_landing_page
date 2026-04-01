@@ -4,6 +4,9 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Intro from './components/Intro'
 import About from './components/About'
+import Chairs from './components/Chairs'
+import ScientificCommittee from './components/ScientificCommittee'
+import Organizers from './components/Organizers'
 import Speakers from './components/Speakers'
 import CallForPapers from './components/CallForPapers'
 import Program from './components/Program'
@@ -31,6 +34,9 @@ export default function App() {
         <Hero />
         <Intro />
         <About />
+        <Chairs />
+        <ScientificCommittee />
+        <Organizers />
         <Speakers />
         <CallForPapers />
         <Program />
