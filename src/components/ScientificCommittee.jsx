@@ -11,14 +11,14 @@ const members = [
   },
   {
     name: 'PhD. Marcelo Macedo',
-    role: 'Professor, Postgraduate Program in Knowledge Engineering and Management',
+    role: 'Chair',
     org: 'Federal University of Santa Catarina',
     country: 'Brazil',
     photo: '/assets/people_photos/scientific_committee/phd_marcelo_macedo.png',
   },
   {
     name: 'PhD. Vinicius Ramos',
-    role: 'Professor, Dept. of Knowledge Engineering, Management and Media',
+    role: 'Co-Chair',
     org: 'Federal University of Santa Catarina',
     country: 'Brazil',
     photo: '/assets/people_photos/scientific_committee/phd_vinicius_ramos.jpeg',
@@ -31,7 +31,7 @@ const members = [
     photo: '/assets/people_photos/scientific_committee/phd_marcela_vera.png',
   },
   {
-    name: 'PhD. Diego Fuenzalida',
+    name: 'PhD. Diego Fuentealba',
     role: 'Director of the Artificial Intelligence Laboratory, Dept. of Accounting and Auditing',
     org: 'University of Santiago of Chile',
     country: 'Chile',
@@ -44,10 +44,25 @@ const members = [
     country: 'Chile',
     photo: '/assets/people_photos/scientific_committee/phd_jose_luis_alvarez.jpg',
   },
+  {
+    name: 'PhD. Daniel Alemneh',
+    role: 'Head - Digital Curation Unit, UNT Digital Libraries · Adjunct Professor, College of Information',
+    org: 'University of North Texas',
+    country: 'United States',
+    photo: '/assets/people_photos/scientific_committee/phd_daniel_alemneh.png',
+  },
+  {
+    name: 'PhD. Kendra Albright',
+    role: 'Goodyear Endowed Professor in Knowledge Management / Smart City and Community Development Consultant',
+    org: 'University of Kent',
+    country: 'United States',
+    photo: '/assets/people_photos/scientific_committee/phd_kendra_albright.png',
+  },
 ]
 
 const page1 = members.slice(0, 3)
-const page2 = members.slice(3)
+const page2 = members.slice(3, 6)
+const page3 = members.slice(6)
 
 function MemberCard({ name, role, org, country, photo }) {
   return (
@@ -85,7 +100,7 @@ export default function ScientificCommittee() {
       const denominator = sectionHeight - window.innerHeight
       if (denominator <= 0) return
       const progress = Math.max(0, Math.min(1, scrolled / denominator))
-      setActivePage(progress >= 0.5 ? 1 : 0)
+      setActivePage(progress >= 0.66 ? 2 : progress >= 0.33 ? 1 : 0)
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })
@@ -93,7 +108,7 @@ export default function ScientificCommittee() {
   }, [])
 
   return (
-    <section ref={ref} className="relative h-auto xl:h-[200vh]">
+    <section ref={ref} className="relative h-auto xl:h-[300vh]">
       <div className="xl:sticky xl:top-0 xl:h-screen bg-[#163457] flex flex-col px-6 xl:px-12 pt-14 pb-6">
 
         {/* Title */}
@@ -102,12 +117,12 @@ export default function ScientificCommittee() {
 
         {/* Desktop — páginas animadas */}
         <div className="hidden xl:block relative flex-1">
-          {[page1, page2].map((page, idx) => (
+          {[page1, page2, page3].map((page, idx) => (
             <motion.div
               key={idx}
               animate={{
                 opacity: activePage === idx ? 1 : 0,
-                y: activePage === idx ? 0 : idx === 0 ? -40 : 40,
+                y: activePage === idx ? 0 : idx < activePage ? -40 : 40,
               }}
               transition={{ duration: 0.55, ease: 'easeInOut' }}
               className="absolute inset-0 flex items-center justify-center"
@@ -127,7 +142,7 @@ export default function ScientificCommittee() {
 
         {/* Indicador de página (solo desktop) */}
         <div className="hidden xl:flex gap-3 justify-center pb-2">
-          {[0, 1].map((i) => (
+          {[0, 1, 2].map((i) => (
             <motion.div
               key={i}
               animate={{ opacity: activePage === i ? 1 : 0.3, scale: activePage === i ? 1.2 : 1 }}

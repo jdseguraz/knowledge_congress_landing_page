@@ -33,10 +33,6 @@ export default function Contact() {
                 contact@knowledgeconference.cl
               </a>
             </motion.div>
-            <motion.div variants={staggerItem} className="flex items-center gap-3">
-              <span className="text-white/60 text-lg">📞</span>
-              <span className="text-white/80 text-lg leading-snug">+56 9 9085 4734</span>
-            </motion.div>
           </motion.div>
         </motion.div>
 

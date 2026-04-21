@@ -50,7 +50,7 @@ function SpeakerCard({ name, country, photo, bio }) {
       {/* Desktop: círculo grande arriba-izquierda, texto abajo-derecha */}
       <div className="hidden md:flex items-end gap-10 w-full h-[58vh] pb-6 justify-center items-center">
         {/* Círculo grande — anclado arriba */}
-        <div className="self-start flex-shrink-0 w-80 h-80 xl:w-96 xl:h-96 2xl:w-[26rem] 2xl:h-[26rem] rounded-full border-4 border-orange overflow-hidden bg-navy-light">
+        <div className="self-start flex-shrink-0 w-[22rem] h-[22rem] xl:w-[26rem] xl:h-[26rem] 2xl:w-[28rem] 2xl:h-[28rem] rounded-full border-[12px] border-orange overflow-hidden bg-navy-light">
           {photoEl}
         </div>
         {/* Texto — anclado abajo, diagonal natural */}

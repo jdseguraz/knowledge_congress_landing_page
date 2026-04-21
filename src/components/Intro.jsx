@@ -10,10 +10,10 @@ export default function Intro() {
     >
       {/* Background video */}
       <video
-        autoPlay
-        loop
         muted
         playsInline
+        preload="none"
+        poster="/assets/audience_photos/audience1.jpg"
         className="absolute inset-0 w-full h-full object-cover object-top"
       >
         <source src="/assets/videos/video-inicial.mov" type="video/mp4" />
