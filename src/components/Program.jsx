@@ -23,10 +23,10 @@ export default function Program() {
                 key={day.num}
                 variants={staggerItem}
                 custom={i}
-                className="w-full flex items-center gap-4 md:gap-6 px-6 md:pl-16 md:pr-8 py-5 md:py-7 rounded-full md:rounded-l-none md:rounded-r-full bg-orange hover:bg-[#8abceb] transition-colors text-white font-bahnschrift font-bold uppercase"
+                className="w-full flex items-center gap-4 md:gap-6 px-6 md:pl-16 md:pr-8 py-4 md:py-5 xl:py-7 rounded-full md:rounded-l-none md:rounded-r-full bg-orange hover:bg-[#8abceb] transition-colors text-white font-bahnschrift font-bold uppercase"
               >
-                <span className="text-3xl md:text-5xl shrink-0">DAY {day.num}</span>
-                <span className="text-sm md:text-lg font-normal normal-case leading-snug">{day.title}</span>
+                <span className="text-2xl md:text-3xl xl:text-5xl shrink-0">DAY {day.num}</span>
+                <span className="text-xs md:text-sm xl:text-lg font-normal normal-case leading-snug">{day.title}</span>
               </motion.div>
             ))}
           </div>

@@ -9,6 +9,7 @@ import ScientificCommittee from './components/ScientificCommittee'
 import Organizers from './components/Organizers'
 import Speakers from './components/Speakers'
 import SubSpeakers from './components/SubSpeakers'
+import Workshops from './components/Workshops'
 import CallForPapers from './components/CallForPapers'
 import Program from './components/Program'
 import Sponsors from './components/Sponsors'
@@ -40,6 +41,7 @@ export default function App() {
         <Organizers />
         <Speakers />
         <SubSpeakers />
+        <Workshops />
         <CallForPapers />
         <Program />
         <Sponsors />

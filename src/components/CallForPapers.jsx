@@ -87,7 +87,7 @@ export default function CallForPapers() {
     : tracks.filter((t) => t.num === activeTrack)
 
   return (
-    <section id="call-for-papers" className="bg-navy min-h-screen md:h-screen flex items-center px-6 md:px-16 py-16 md:py-0">
+    <section id="call-for-papers" className="bg-navy min-h-screen xl:h-screen flex items-center px-6 md:px-16 py-16 xl:py-0">
       <div className="w-full grid md:grid-cols-2 gap-12">
         {/* Left */}
         <motion.div initial="hidden" whileInView="visible" viewport={viewport} variants={staggerContainer}>
@@ -162,7 +162,7 @@ export default function CallForPapers() {
               <span className="text-xl md:text-2xl">Paper Guidelines</span>
             </a>
             <a
-              href="https://easychair.org/account/signin?l=1113110439602510615.1776804328.837cfead"
+              href="https://easychair.org/account/signin?l=8048453951263835041.1776820327.80dc7275"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-5 md:pl-8 md:pr-16 md:py-7 rounded-full md:rounded-r-none md:rounded-l-full text-white font-bahnschrift font-normal transition-colors hover:bg-orange"
