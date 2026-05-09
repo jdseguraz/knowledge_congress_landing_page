@@ -7,46 +7,46 @@ const chairs = [
     role: 'General Chair',
     country: 'Chile',
     photo: '/assets/people_photos/chairs/gregorio_perez_arrau.jpg',
-    bio: 'PhD in Management from the University of Liverpool and faculty member at USACH since 1997, where he leads the Human Resource Management area at the Faculty of Administration and Economics.',
+    bio: "PhD in Management from the University of Liverpool and faculty member at USACH since 1997, where he currently leads the Human Resource Management area at the Faculty of Administration and Economics.",
   },
   {
     name: 'Paulo Mauricio Selig',
-    role: 'Meritorious Chair',
+    role: 'CIK Meritorious Chair',
     country: 'Brasil',
     photo: '/assets/people_photos/chairs/paulo_selig.jpg',
     bio: 'PhD in Production Engineering, former President of the Brazilian Production Engineering Association, and current Chairman of the International Conference on Knowledge and Innovation (CIKI).',
   },
   {
     name: 'Suliman Hawamdeh',
-    role: 'Meritorious Chair',
+    role: 'ICKM Meritorious Chair',
     country: 'United States',
     photo: '/assets/people_photos/chairs/suliman_h.png',
     bio: 'Regents Professor of Information Science at the University of North Texas and a leading authority in knowledge management. Editor-in-Chief of the Journal of Information and Knowledge Management.',
   },
   {
     name: 'Florinda Matos',
-    role: 'Meritorious Chair',
+    role: 'GFIC Meritorious Chair',
     country: 'Portugal',
     photo: '/assets/people_photos/chairs/florinda_matos.jpg',
     bio: "Professor of General Management at ISCTE Business School. Founder and President of the Intellectual Capital Association (ICAA) and Portugal's ambassador to The New Club of Paris.",
   },
   {
     name: 'Tereza Raquel Merlo',
-    role: 'Meritorious Chair',
+    role: 'ICKM Chair',
     country: 'United States',
     photo: '/assets/people_photos/chairs/tereza_raquel_merlo.jpeg',
     bio: 'Postdoctoral researcher at UFRJ and lecturer at the University of North Texas, specializing in knowledge management and emerging technologies. CEO of Merlo Management Consulting.',
   },
   {
     name: 'Fernando Gauthier',
-    role: 'President of the Scientific Committee',
+    role: 'CIKI Chair',
     country: 'Brasil',
     photo: '/assets/people_photos/chairs/fernando_gauthier.png',
     bio: 'Full Professor of Knowledge Engineering at the Federal University of Santa Catarina. His work focuses on knowledge engineering, artificial intelligence, ontologies, and digital education.',
   },
   {
     name: 'Nuno Matos',
-    role: 'GFIC Conference Co-Chair',
+    role: 'GFIC Chair',
     country: 'Portugal',
     photo: '/assets/people_photos/chairs/nuno_matos.png',
     bio: 'Operational Director at Diagonal – Insurance Brokers and Vice President of the Intellectual Capital Association (ICAA). His work focuses on intellectual capital and knowledge management.',
@@ -100,7 +100,7 @@ export default function Chairs() {
   }, [])
 
   return (
-    <section ref={ref} className="relative h-auto xl:h-[200vh]">
+    <section id="chairs" ref={ref} className="relative h-auto xl:h-[200vh]">
       <div className="xl:sticky xl:top-0 xl:h-screen bg-navy flex flex-col px-6 xl:px-12 pt-14 pb-6">
 
         {/* Title */}

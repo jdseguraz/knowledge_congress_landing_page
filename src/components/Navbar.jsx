@@ -91,12 +91,8 @@ export default function Navbar() {
             <img src="/assets/logos/principales/GFIC.png" alt="GFIC" className="h-12 xl:h-20 object-contain" />
           </div>
 
-          {/* Desktop: globe + primary links + more dropdown */}
+          {/* Desktop: primary links + more dropdown */}
           <div className="hidden xl:flex flex-col items-end gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-navy/80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <circle cx="12" cy="12" r="10" strokeWidth="1.5" />
-              <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" strokeWidth="1.5" />
-            </svg>
             <div className="flex items-center gap-7">
               <NavLinks links={PRIMARY_LINKS} active={active} />
 

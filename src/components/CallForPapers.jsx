@@ -99,6 +99,7 @@ export default function CallForPapers() {
 
             <div className="text-white/80 text-base md:text-lg leading-snug space-y-1 md:pt-1">
               <p>Call for abstracts/Industrial cases/Posters opens: <strong className="text-white">April 1st, 2026</strong></p>
+              <p className="text-orange font-bahnschrift font-bold">ABSTRACT REGISTRATION DEADLINE: MAY 15TH, 2026</p>
               <p className="text-orange font-bahnschrift font-bold">SUBMISSION DEADLINE: JULY 15TH, 2026</p>
             </div>
           </motion.div>
@@ -162,7 +163,7 @@ export default function CallForPapers() {
               <span className="text-xl md:text-2xl">Paper Guidelines</span>
             </a>
             <a
-              href="https://easychair.org/account/signin?l=8048453951263835041.1776820327.80dc7275"
+              href="https://easychair.org/my/conference?conf=gficickmciki2026"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-5 md:pl-8 md:pr-16 md:py-7 rounded-full md:rounded-r-none md:rounded-l-full text-white font-bahnschrift font-normal transition-colors hover:bg-orange"

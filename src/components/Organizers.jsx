@@ -51,7 +51,7 @@ function LeadCard({ name, role, country, photo }) {
 
 export default function Organizers() {
   return (
-    <section className="relative h-auto xl:h-screen">
+    <section id="organizers" className="relative h-auto xl:h-screen">
       <div className="xl:sticky xl:top-0 xl:h-screen bg-[#163457] flex flex-col px-6 xl:px-12 pt-14 pb-6">
 
         {/* Title */}

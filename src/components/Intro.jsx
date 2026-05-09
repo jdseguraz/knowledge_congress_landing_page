@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import CallForPapersCta from './CallForPapersCta'
 import { staggerContainer, staggerItem, viewport } from '../utils/animations'
 
 export default function Intro() {
@@ -49,16 +48,6 @@ export default function Intro() {
             dialogue on the key issues shaping the next frontier of global development.
           </motion.p>
         </motion.div>
-
-        {/* CTA mobile — debajo del contenido */}
-        <div className="md:hidden">
-          <CallForPapersCta variant="mobile" />
-        </div>
-      </div>
-
-      {/* CTA desktop — absoluto bottom-right */}
-      <div className="hidden md:block">
-        <CallForPapersCta variant="desktop" />
       </div>
 
     </section>

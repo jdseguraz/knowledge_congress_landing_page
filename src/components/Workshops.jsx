@@ -105,7 +105,7 @@ function WorkshopSlide({ workshop }) {
       {/* Col 1 — título de sección + título del workshop + overview */}
       <div className="flex flex-col gap-2 justify-center">
         <h2 className="section-title text-4xl xl:text-5xl 2xl:text-6xl leading-none">WORKSHOPS</h2>
-        <h3 className="font-bahnschrift font-extrabold text-orange text-xl xl:text-2xl 2xl:text-3xl leading-snug">
+        <h3 className="font-bahnschrift font-extrabold text-orange text-xl xl:text-4xl 2xl:text-5xl leading-snug">
           {title}
         </h3>
         {overview && (

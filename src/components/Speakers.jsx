@@ -86,7 +86,7 @@ export default function Speakers() {
   }, [])
 
   return (
-    <section ref={ref} className="relative h-auto md:h-[300vh]">
+    <section id="speakers" ref={ref} className="relative h-auto md:h-[300vh]">
       <div className="md:sticky md:top-0 md:h-screen bg-navy flex items-center px-6 md:px-16 py-16 md:py-0 overflow-hidden">
         <div className="w-full grid md:grid-cols-3 gap-10 items-center">
 

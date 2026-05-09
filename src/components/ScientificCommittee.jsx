@@ -108,7 +108,7 @@ export default function ScientificCommittee() {
   }, [])
 
   return (
-    <section ref={ref} className="relative h-auto xl:h-[300vh]">
+    <section id="scientific-committee" ref={ref} className="relative h-auto xl:h-[300vh]">
       <div className="xl:sticky xl:top-0 xl:h-screen bg-[#163457] flex flex-col px-6 xl:px-12 pt-14 pb-6">
 
         {/* Title */}
