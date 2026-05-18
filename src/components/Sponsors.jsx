@@ -18,12 +18,12 @@ const supportingSponsors = [
 export default function Sponsors() {
   return (
     <section id="sponsors" className="bg-white min-h-screen xl:h-screen flex items-center px-10 py-16 xl:py-0 overflow-hidden">
-      <div className="grid grid-cols-1 xl:grid-cols-4 gap-10 xl:gap-16 items-start w-full max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 xl:grid-cols-4 gap-12 xl:gap-20 items-center w-full max-w-7xl mx-auto">
 
         {/* Col 1 — Título */}
         <motion.div initial="hidden" whileInView="visible" viewport={viewport} variants={fadeUp}>
-          <h2 className="font-bahnschrift font-extrabold uppercase text-orange text-6xl leading-none">
-            SPONSORS
+          <h2 className="font-bahnschrift font-extrabold uppercase text-orange text-5xl xl:text-5xl leading-none">
+            ORGANIZING COMMITTEE
           </h2>
         </motion.div>
 

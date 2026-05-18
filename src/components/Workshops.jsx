@@ -5,6 +5,7 @@ const workshops = [
   {
     id: 1,
     title: 'Building Trusted Intelligence: Agentic AI and Data Governance for Organizational Decision-Making',
+    materialUrl: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:09df6cc1-611e-4251-966e-cc41c30c5d5f',
     overview: 'This workshop explores how organizations can integrate Agentic AI with strong data governance to enable trusted, transparent, and responsible decision-making. It bridges theory and practice, offering practical frameworks to align AI capabilities with governance, ensuring reliability, accountability, and strategic value.',
     learn: [
       'Understanding Agentic AI in modern organizations',
@@ -35,25 +36,6 @@ const workshops = [
   },
   {
     id: 2,
-    title: 'Preparing for the AI Era: Challenges in Training, Professional Development, and Skills Adaptation',
-    overview: null,
-    learn: null,
-    audience: null,
-    presenters: [
-      {
-        name: 'Bruno Poellhuber, Ph.D.',
-        photo: '/assets/people_photos/workshops/phd_bruno_poellhuber.jpg',
-        bio: 'Director of LAVIA and Full Professor at the Faculty of Education, University of Montreal. Academic Director of the Center for University Pedagogy (CPU). His research focuses on digital technologies for learning in higher education and digital literacy among teachers and students.',
-      },
-      {
-        name: 'Normand Roy, Ph.D.',
-        photo: '/assets/people_photos/workshops/phd_normand_roy.jpg',
-        bio: 'Professor in the Department of Psychopedagogy and Andragogy at the University of Montreal. His research focuses on emerging technologies (VR, robotics, video games) and the role of digital technologies in society, including AI and open educational resources.',
-      },
-    ],
-  },
-  {
-    id: 3,
     title: 'The Elements of Knowledge and Innovation: How to Design Unique Capability Combinations for Strategy',
     overview: 'Teams will learn to read their organization as a system of capabilities rather than a collection of isolated initiatives. Using the Periodic Table of Knowledge and Innovation, they will identify which elements they already have, which ones are missing, and how to combine them to design a unique formula that strengthens their competitive advantage.',
     learn: [
@@ -97,7 +79,7 @@ function PresenterCard({ name, photo, bio }) {
 }
 
 function WorkshopSlide({ workshop }) {
-  const { title, overview, learn, audience, audienceText, presenters } = workshop
+  const { title, overview, learn, audience, audienceText, presenters, materialUrl } = workshop
 
   return (
     <div className="w-full flex flex-col xl:grid xl:grid-cols-[1fr_2fr] gap-5 xl:gap-10">
@@ -113,6 +95,19 @@ function WorkshopSlide({ workshop }) {
             <p className="font-bahnschrift font-bold text-white uppercase text-sm xl:text-base tracking-widest mb-1">Overview</p>
             <p className="text-white/80 text-sm xl:text-base 2xl:text-lg leading-snug">{overview}</p>
           </div>
+        )}
+        {materialUrl && (
+          <a
+            href={materialUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-4 px-5 py-2.5 rounded-full bg-orange hover:bg-orange/90 text-white font-bahnschrift font-bold uppercase text-sm xl:text-base tracking-wide transition-colors w-fit"
+          >
+            View Workshop Material
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
         )}
       </div>
 
@@ -208,7 +203,7 @@ export default function Workshops() {
   }, [])
 
   return (
-    <section ref={ref} className="relative h-auto xl:h-[300vh]">
+    <section id="workshops" ref={ref} className="relative h-auto xl:h-[200vh]">
       <div className="xl:sticky xl:top-0 xl:h-screen bg-[#163457] flex flex-col justify-center px-6 md:px-16 py-16 xl:py-0 overflow-hidden">
 
         {/* Dots — desktop */}

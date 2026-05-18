@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 
 const PRIMARY_LINKS = ['About', 'Chairs', 'Speakers', 'Call for Papers', 'Sponsors', 'Registration', 'Contact']
-const SECONDARY_LINKS = ['Scientific Committee', 'Organizers', 'Program']
+const SECONDARY_LINKS = ['Scientific Committee', 'Organizers', 'Workshops', 'Roundtables', 'Program']
 
 function NavLinks({ links, active, onLinkClick }) {
   return (
@@ -173,7 +173,7 @@ export default function Navbar() {
         )}
       </button>
 
-      {/* Dropdown menu panel — all links */}
+      {/* Dropdown menu panel — primary + secondary grouped */}
       <div
         className={`fixed right-6 z-40 bg-sky-light/95 backdrop-blur-md rounded-2xl shadow-2xl px-8 py-6 transition-all duration-300 ${
           visible ? 'top-[min(20vh,130px)]' : 'top-20'
@@ -183,7 +183,10 @@ export default function Navbar() {
             : 'opacity-0 scale-90 -translate-y-4 pointer-events-none'
         }`}
       >
-        <NavLinks links={[...PRIMARY_LINKS, ...SECONDARY_LINKS]} active={active} onLinkClick={() => setMenuOpen(false)} />
+        <NavLinks links={PRIMARY_LINKS} active={active} onLinkClick={() => setMenuOpen(false)} />
+        <div className="my-4 border-t border-navy/15" />
+        <p className="font-bahnschrift font-bold text-navy/50 uppercase text-xs tracking-widest mb-3">More</p>
+        <NavLinks links={SECONDARY_LINKS} active={active} onLinkClick={() => setMenuOpen(false)} />
       </div>
     </>
   )

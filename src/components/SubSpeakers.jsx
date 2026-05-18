@@ -72,9 +72,18 @@ const subSpeakers = [
   {
     name: 'Kaiyu Zhang',
     country: 'China',
-    photo: null,
-    role: 'Manager, China Railway No. 10 Engineering Group – Chile Branch',
+    photo: '/assets/people_photos/speakers/KAIYU_ZHANG.png',
+    role: 'Executive, China Railway No. 10 Engineering Group',
     talk: null,
+    linkedin: null,
+    objectPosition: 'center 20%',
+  },
+  {
+    name: 'Pedro Sierra',
+    country: 'Chile',
+    photo: '/assets/people_photos/speakers/pedro_sierra.jpg',
+    role: 'Former Executive Director, Innova Chile · Former Corporate Manager, CORFO',
+    talk: 'The new challenges of public innovation policies.',
     linkedin: null,
   },
 ]
