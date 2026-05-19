@@ -16,6 +16,7 @@ import Program from './components/Program'
 import Sponsors from './components/Sponsors'
 import Registration from './components/Registration'
 import Contact from './components/Contact'
+import FloatingCalendar from './components/FloatingCalendar'
 
 export default function App() {
   const [loading, setLoading] = useState(true)
@@ -50,6 +51,7 @@ export default function App() {
         <Registration />
         <Contact />
       </main>
+      <FloatingCalendar />
     </>
   )
 }
